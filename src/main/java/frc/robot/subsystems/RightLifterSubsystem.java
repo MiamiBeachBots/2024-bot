@@ -15,7 +15,7 @@ public class RightLifterSubsystem extends SubsystemBase {
 
   /** Creates a new LifterSubsystem. */
   public RightLifterSubsystem() {
-    m_right = new CANSparkMax(CANConstants.MOTORLIFTERRIGHTID, CANSparkMax.MotorType.kBrushless);
+    m_right = new CANSparkMax(CANConstants.MOTORLIFTERRIGHTID, CANSparkMax.MotorType.kBrushed);
     m_right.setIdleMode(CANSparkMax.IdleMode.kBrake);
     m_right.setSmartCurrentLimit(60);
     m_right.burnFlash();
